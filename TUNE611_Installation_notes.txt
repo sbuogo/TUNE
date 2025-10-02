@@ -1,0 +1,114 @@
+==============================================
+T U N E - Tool for UnderWater Noise Evaluation
+==============================================
+v. 6.11 - 03-oct-2025
+Distributed freely under GNU General Public License v. 3.0.
+Authors: Silvano Buogo, Junio Fabrizio Borsani, Valentina Caradonna
+Send comments to: silvano.buogo@cnr.it
+
+Installation notes
+
+TUNE executable is developed under Matlab environment and packaged as
+a Windows standalone application requiring Matlab runtime v. 9.5 (R2018b). 
+If not already present, runtime is freely and automatically downloaded 
+from the web during installation.
+
+
+1. System requirements
+
+System requirements are the same as those for Matlab v. 9.5 (R2018b):
+
+- Operating systems:
+	Windows 10, 11
+	Windows 7 Service Pack 1
+	Windows Server 2016, 2012 R2, 2012
+	Note: Windows 8.1 not supported
+
+- Processors:
+	Any Intel or AMD x86-64 processor, 4 cores and AVX2 support recommended
+
+- Minimum 3 GB Disk space, SSD recommended
+
+- Minimum 4 GB RAM, 8 GB recommended
+
+- No graphics card required, hardware accelerated graphics card supporting
+  	OpenGL 3.3 with 1 GB GPU memory recommended.
+
+
+2. Installation procedure
+
+2.1 Recommended procedure: automatic runtime web download
+
+Launch the installer file "TUNE***_Installer_web.exe" (*** = version number)
+then follow the instructions. User is prompted to select installation folders 
+for executable and runtime, and to optionally add a desktop shortcut.
+If Matlab full program or runtime is not present or is installed with version(s)
+different than v. 9.5, this runtime is installed using a proper separate target 
+folder, possibly along with the existing one(s).  The installer skips runtime install 
+if Matlab runtime v. 9.5 is detected, considerably reducing installation time. 
+Note that some Matlab versions later than v. 9.5 may still support v. 9.5 runtime.
+Installing v. 9.5 runtime alongside with existing full installations of much earlier
+Matlab versions, or highly customized installations, is unchecked and discouraged 
+as conflicts may arise between the two which may lead to execution hangup.
+
+Runtime download size is about 800 MB, which may require quite some time on slow 
+connections.
+
+2.2 Alternate procedure: manual runtime web download
+
+Alternatively, prior to installing TUNE, download and install the Windows version 
+of MATLAB Runtime v. 9.5 (R2018b) from the following link on MathWorks website:
+
+    http://www.mathworks.com/products/compiler/mcr/index.html
+   
+Once the runtime is correctly installed, TUNE installer may be launched even
+with no web connection available to install an executable file and a desktop
+shortcut. Instead of using the installer, the executable file alone might also
+be copied to and launched from any folder: however, this should be done with
+caution as leaving multiple copies of TUNE executable with different versions
+might lead to conflicts when dealing with initialization and setup files.
+
+For more information about MATLAB Runtime and MATLAB Runtime installer, see 
+"Distribute Applications" in MATLAB Compiler documentation in the MathWorks 
+Documentation Center.
+
+For information on application deployment terminology, go to
+
+    http://www.mathworks.com/help 
+    
+and select 
+
+    MATLAB Compiler > Getting Started > About Application Deployment > 
+    Deployment Product Terms 
+    
+in the MathWorks Documentation Center.
+
+2.3 Alternate procedure: installer including runtime
+
+In cases where TUNE is to be installed on a PC with no available web access, 
+another installer file "TUNE***_Installer_runtime.exe" (*** = version number)
+is provided which also includes and installs the required runtime. This 
+installer is a totally standalone app and may be copied to and launched from
+any folder on any offline PC provided that system requirements are met. 
+Note that the size of this installer is quite large (about 1 GB).
+
+
+3. Launching TUNE application
+
+TUNE is started as a normal Windows application by double-clicking on it.
+When starting for the first time, some additional time may be required to configure
+Matlab runtime in the background, as if starting a regular full Matlab session.
+
+
+4. Uninstalling/reinstalling TUNE
+
+TUNE may be uninstalled using Windows standard system tool. Uninstalling TUNE
+does not uninstall Matlab runtime, which should be done separately. Note that
+the uninstall feature is only effective if TUNE has been previously installed
+using the installer.
+
+Reinstalling TUNE does not require to reinstall Matlab runtime if already present.
+
+Existing TUNE versions should be uninstalled before installing a new one.
+
+
