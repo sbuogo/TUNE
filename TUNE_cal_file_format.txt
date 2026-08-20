@@ -11,9 +11,9 @@
 # extrapolated keeping first or last value as a constant.
 # Units are Hz for frequencies and dB re 1 V/microPa for 
 # sensitivities (M).
-# Alternatively, scale factors (SF) in Pa may be used: the
+# Alternatively, Calibration Factors (CF) in Pa may be used: the
 # program recognizes either representation from the sign
-# of first value (negative for M, positive for SF).
+# of first value (negative for M, positive for CF).
 # Any row beginning with non-numeric character is ignored,
 # such as these header lines starting with '#'.
 # Blank lines are also ignored.
@@ -24,7 +24,7 @@
 # Decimal separator must be point, using comma is unsupported.
 #
 # Two examples are given below of accepted calibration data format.
-# First one is with M in dB, second one is with SF in pascal.
+# First one is with M in dB, second one is with CF in pascal.
 
 20	-190.5
 31.5	-190.6
